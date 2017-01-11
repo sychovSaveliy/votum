@@ -1,2 +1,65 @@
 ﻿body {
+    background-color: lightgrey;
+    font-family: 'Roboto', sans-serif;
 }
+
+
+html, body {
+    height: 100%;
+}
+
+
+$logoWidth: 150px;
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    border: 1px solid red;
+    height: 100%;
+}
+
+
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo{
+    width: $logoWidth;
+
+    img {
+        width: 100%;
+    }
+}
+
+.header__menu {
+    width: calc(100% - 150px);
+
+    display: flex;
+    align-items: center;
+    
+    nav {
+        width: 100%;
+        padding-right: 20%;
+
+        ul {
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+
+            li {
+                margin-left: 16px;
+                border: 1px solid rgb(128, 128, 128);
+                padding: 8px;
+                cursor: pointer;
+                transition: .1s ease-in;
+
+                &:hover {
+                    background-color: rgb(130,130, 130);
+                }
+            }
+        }
+    }
+}
+

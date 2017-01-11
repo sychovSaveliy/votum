@@ -1,0 +1,12 @@
+﻿<div ng-controller="headerCtrl" class="header__container">
+    <div class="header__logo">
+        <img src="{{model.logo.url}}" alt="" />
+    </div>
+    <div class="header__menu">
+        <nav>
+            <ul>
+                <li ng-repeat="item in model.menu" ng-click="clickHandler(item.src)">{{item.name}}</li>
+            </ul>
+        </nav>
+    </div>
+</div>
