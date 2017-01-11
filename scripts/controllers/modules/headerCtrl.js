@@ -28,7 +28,7 @@ myApp.controller('headerCtrl', function ($scope) {
     $scope.model = data_page;
 
     $scope.clickHandler = function (url) {
-        $scope.content_url = url;
+        $scope.$emit("changeMenu", url);
     }
 
 });
